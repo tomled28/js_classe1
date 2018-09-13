@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Classe 1</title>
+	<script type="text/javascript">
+		// Key C ==> charCode 99. Key p==> charCode 112
+		document.addEventListener("keypress", function (e){
+		var ryu = document.querySelector ("img");
+		if (e.charCode === 99) {
+			ryu.src = "./css/images/1.png"
+		}
+		 else if (e.charCode === 112) {ryu.src = "./css/images/2.png"}
+		})
+	</script>
+</head>
+<body>
+	<img src="./css/images/1.png" alt="imagen ryu">
+</body>
+</html>
